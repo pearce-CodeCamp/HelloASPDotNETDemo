@@ -49,7 +49,7 @@ namespace HelloASPDotNET.Controllers
             //We could build this logic right in this method, but let's
             //create a separate method that does this for us so that
             //the code in this handler stays clean
-            string greeting = CreateMessage(name, language);
+            string greeting = $"<h1 style='color:cornflowerblue'>{CreateMessage(name, language)}</h1>";
             return Content(greeting, "text/html");
         }
 
